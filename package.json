@@ -53,7 +53,8 @@
     "test-node": "qunit --require ./tests/node tests/",
     "test-browser": "karma start",
     "test": "npm run test-node && npm run test-browser && npm run lint",
-    "prettier": "prettier --write src/*.js"
+    "prettier": "prettier --write src/*.js",
+    "prepare": "rollup -c"
   },
   "volo": {
     "url": "https://raw.githubusercontent.com/strophe/strophejs/release-{version}/strophe.js"
